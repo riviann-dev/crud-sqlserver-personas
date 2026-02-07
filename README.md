@@ -3,7 +3,7 @@ CRUD de Personas con PHP y SQL Server
 Proyecto CRUD completo desarrollado en PHP conectado a SQL Server Express.
 Permite gestionar personas mediante operaciones de creación, consulta, edición y eliminación de registros.
 
-Tecnologías utilizadas
+Tecnologías utilizadas:
 
 PHP 8.2
 
