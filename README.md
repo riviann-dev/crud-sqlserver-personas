@@ -111,7 +111,7 @@ C:\xampp\htdocs
 http://localhost/crud-php-sqlserver
 ```
 
-## Capturas (opcional)
+## Capturas 
 
 * listado de personas
 * formulario de inserción
@@ -138,4 +138,4 @@ Este proyecto forma parte de un portfolio profesional orientado a desarrollo web
 ## Autor
 
 Riviann de Andrade
-Desarrollador en formación – Desarrollo de Aplicaciones Web
+Desarrollador – Desarrollo de Aplicaciones Web
