@@ -22,7 +22,9 @@ $result = sqlsrv_query($conn, $sql);
     <td><?= $row['edad'] ?></td>
     <td><?= $row['email'] ?></td>
     <td>
-        
+        <a href="editar.php?id=<?= $row['id'] ?>">Editar</a>
+        |
+        <a href="eliminar.php?id=<?= $row['id'] ?>">Eliminar</a>
     </td>
 </tr>
 <?php } ?>
