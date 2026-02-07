@@ -5,6 +5,16 @@ $sql = "SELECT * FROM personas";
 $result = sqlsrv_query($conn, $sql);
 ?>
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Personas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
 <h1>Gestión de personas</h1>
 
 <a href="insertar.php">
@@ -13,7 +23,7 @@ $result = sqlsrv_query($conn, $sql);
 
 <br><br>
 
-<table border="1">
+<table>
 <tr>
     <th>ID</th>
     <th>Nombre</th>
@@ -51,3 +61,6 @@ while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
 <?php } ?>
 
 </table>
+
+</body>
+</html>
