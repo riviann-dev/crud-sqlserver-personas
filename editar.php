@@ -27,11 +27,30 @@ if ($_POST) {
 }
 ?>
 
-<h2>Editar persona</h2>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar persona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Editar persona</h1>
 
 <form method="POST">
-    Nombre: <input type="text" name="nombre" value="<?= $persona['nombre'] ?>"><br>
-    Edad: <input type="number" name="edad" value="<?= $persona['edad'] ?>"><br>
-    Email: <input type="text" name="email" value="<?= $persona['email'] ?>"><br>
+    Nombre:<br>
+    <input type="text" name="nombre" value="<?= $persona['nombre'] ?>"><br><br>
+
+    Edad:<br>
+    <input type="number" name="edad" value="<?= $persona['edad'] ?>"><br><br>
+
+    Email:<br>
+    <input type="text" name="email" value="<?= $persona['email'] ?>"><br><br>
+
     <button>Actualizar</button>
 </form>
+
+</body>
+</html>
