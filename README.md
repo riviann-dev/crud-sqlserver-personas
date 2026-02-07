@@ -23,7 +23,7 @@ Permite gestionar personas mediante operaciones de creación, consulta, edición
 ## Estructura del proyecto
 
 ```
-crud-php-sqlserver/
+crud-sqlserver-personas/
 │
 ├── conexion.php
 ├── index.php
@@ -94,7 +94,7 @@ $connectionOptions = array(
 1. Clonar repositorio
 
 ```
-git clone https://github.com/usuario/crud-php-sqlserver.git
+git clone https://github.com/riviann-dev/crud-sqlserver-personas.git
 ```
 
 2. Copiar carpeta dentro de:
