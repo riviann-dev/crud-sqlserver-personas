@@ -21,6 +21,9 @@ $result = sqlsrv_query($conn, $sql);
     <td><?= $row['nombre'] ?></td>
     <td><?= $row['edad'] ?></td>
     <td><?= $row['email'] ?></td>
+    <td>
+        
+    </td>
 </tr>
 <?php } ?>
 </table>
