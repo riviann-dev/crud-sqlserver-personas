@@ -1,10 +1,10 @@
-<?php 
+<?php
 $serverName = "localhost\\SQLEXPRESS";
-$connectionOptions = array (
+$connectionOptions = array(
     "Database" => "personas_db",
     "Uid" => "",
     "PWD" => "",
-    "Characters" => "UTF-8"
+    "CharacterSet" => "UTF-8"
 );
 
 $conn = sqlsrv_connect($serverName, $connectionOptions);
