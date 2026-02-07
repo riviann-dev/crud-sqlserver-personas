@@ -1,36 +1,29 @@
-CRUD de Personas con PHP y SQL Server
+# CRUD de Personas con PHP y SQL Server
 
 Proyecto CRUD completo desarrollado en PHP conectado a SQL Server Express.
 Permite gestionar personas mediante operaciones de creación, consulta, edición y eliminación de registros.
 
-Tecnologías utilizadas
+## Tecnologías utilizadas
 
-PHP 8.2
+* PHP 8.2
+* SQL Server Express
+* SQLSRV driver for PHP
+* XAMPP (Apache)
+* HTML / CSS básico
+* SQL Server Management Studio (SSMS)
 
-SQL Server Express
+## Funcionalidades
 
-SQLSRV driver for PHP
+* Crear nuevas personas
+* Listar registros en base de datos
+* Editar información existente
+* Eliminar registros
+* Conexión directa PHP ↔ SQL Server
 
-XAMPP (Apache)
+## Estructura del proyecto
 
-HTML / CSS básico
-
-SQL Server Management Studio (SSMS)
-
-Funcionalidades
-
-Crear nuevas personas
-
-Listar registros en base de datos
-
-Editar información existente
-
-Eliminar registros
-
-Conexión directa PHP ↔ SQL Server
-
-Estructura del proyecto
-crud-php-sqlserver/
+```
+crud-sqlserver-personas/
 │
 ├── conexion.php
 ├── index.php
@@ -40,14 +33,19 @@ crud-php-sqlserver/
 ├── database/
 │   └── script.sql
 └── README.md
-Base de datos
+```
+
+## Base de datos
 
 Nombre de la base de datos:
 
+```
 personas_db
+```
 
 Script de creación:
 
+```sql
 CREATE DATABASE personas_db;
 
 USE personas_db;
@@ -58,78 +56,86 @@ CREATE TABLE personas (
     edad INT,
     email VARCHAR(100)
 );
-Configuración del entorno
-1. Instalar dependencias
+```
 
-SQL Server Express
+## Configuración del entorno
 
-XAMPP
+### 1. Instalar dependencias
 
-SQLSRV drivers para PHP
+* SQL Server Express
+* XAMPP
+* SQLSRV drivers para PHP
 
-2. Activar extensiones en php.ini
+### 2. Activar extensiones en php.ini
+
+```ini
 extension=php_sqlsrv_82_ts_x64.dll
 extension=php_pdo_sqlsrv_82_ts_x64.dll
-3. Configurar conexión
+```
+
+### 3. Configurar conexión
 
 Archivo:
 
+```
 conexion.php
+```
+
+```php
 $serverName = "localhost\\SQLEXPRESS";
 $connectionOptions = array(
     "Database" => "personas_db",
     "TrustServerCertificate" => true
 );
-Ejecución del proyecto
+```
 
-Clonar repositorio
+## Ejecución del proyecto
 
-git clone https://github.com/usuario/crud-php-sqlserver.git
+1. Clonar repositorio
 
-Copiar carpeta dentro de:
+```
+git clone https://github.com/riviann-dev/crud-sqlserver-personas.git
+```
 
+2. Copiar carpeta dentro de:
+
+```
 C:\xampp\htdocs
+```
 
-Iniciar Apache en XAMPP
+3. Iniciar Apache en XAMPP
 
-Abrir en navegador:
+4. Abrir en navegador:
 
-http://localhost/crud-php-sqlserver
-Capturas (opcional)
+```
+http://localhost/crud-sqlserver-personas/
+```
 
-listado de personas
+## Capturas 
 
-formulario de inserción
+* listado de personas
+* formulario de inserción
+* edición de registros
 
-edición de registros
-
-Objetivo del proyecto
+## Objetivo del proyecto
 
 Este proyecto forma parte de un portfolio profesional orientado a desarrollo web backend y gestión de bases de datos, demostrando:
 
-conexión PHP con SQL Server
+* conexión PHP con SQL Server
+* implementación de operaciones CRUD
+* uso de drivers SQLSRV
+* estructura básica de aplicación web
 
-implementación de operaciones CRUD
+## Posibles mejoras futuras
 
-uso de drivers SQLSRV
+* interfaz con Bootstrap
+* validaciones de formulario
+* sistema de login
+* roles de usuario
+* API REST
+* despliegue en servidor remoto
 
-estructura básica de aplicación web
-
-Posibles mejoras futuras
-
-interfaz con Bootstrap
-
-validaciones de formulario
-
-sistema de login
-
-roles de usuario
-
-API REST
-
-despliegue en servidor remoto
-
-Autor
+## Autor
 
 Riviann de Andrade
-Desarrollador en formación – Desarrollo de Aplicaciones Web
+Desarrollador – Desarrollo de Aplicaciones Web
