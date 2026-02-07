@@ -108,7 +108,7 @@ C:\xampp\htdocs
 4. Abrir en navegador:
 
 ```
-http://localhost/crud-php-sqlserver
+http://localhost/crud-sqlserver-personas/
 ```
 
 ## Capturas 
